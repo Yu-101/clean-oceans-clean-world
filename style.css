@@ -2,7 +2,7 @@
 
 /*GLOBAL STYLES*/
 :root {
-    --bg: #ffffff;
+    --bg: #F5FCFF;
     --text: #222;
     --nav: #e0e0e0;
     --accent: #0077b6;
@@ -30,6 +30,7 @@ body {
 header {
     position: fixed;
     top: 0;
+    height: 65px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@ header {
     transition: top 0.3s;
 }
 
-logo {
+header .logo {
     height: 45px;
     width: 45px;
     object-fit: contain;
