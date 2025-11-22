@@ -41,7 +41,7 @@ header {
     transition: top 0.3s;
 }
 
-icon {
+logo {
     height: 45px;
     width: 45px;
     object-fit: contain;
