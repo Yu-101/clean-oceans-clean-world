@@ -268,3 +268,18 @@ h2 {
 }
 
 
+/* Tablet fix */
+@media (max-width: 1024px) {
+    .site-title {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        margin: 0 6px;
+    }
+
+    header {
+        padding: 8px 12px;
+    }
+}
