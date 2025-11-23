@@ -108,7 +108,7 @@ h2 {
 }
 
 .image-block p {
-    margin-top: 12px;
+    margin-top: 12px;  /*Index learn more*/
     line-height: 1.6;
 }
 
@@ -133,6 +133,10 @@ h2 {
     display: none;
 }
 
+.hero-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 /*GALLERY GRID*/
@@ -225,3 +229,5 @@ h2 {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+
