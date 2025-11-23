@@ -1,5 +1,5 @@
-
-
+/*-----------------*/
+/*-----------------*/
 /*GLOBAL STYLES*/
 :root {
     --bg: #E8F9FD;
@@ -25,7 +25,9 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
 /*NAVIGATION BAR*/
 /* NAVBAR FIXES */
 header {
@@ -69,15 +71,28 @@ nav {
 
 /* Theme Button */
 #themeToggle {
-    padding: 8px 12px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    background: var(--accent);
-    color: white;
-    cursor: pointer;
-    flex-shrink: 0;        /* PREVENTS SHRINKING OFFSCREEN */
+  padding: 8px 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0; 
+    transition: background 0.3s;
+    margin-left: 10px;
 }
+
+
+#themeToggle:hover {
+    background: var(--accent-light);
+}
+
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+
 
 nav a {
     margin: 0 12px;
@@ -120,30 +135,11 @@ nav {
     overflow: hidden;
 }
 
-/* Ensure icons/buttons don’t push layout */
-#themeToggle {
-    flex-shrink: 0;
-}
 
 
-#themeToggle {
-    padding: 8px 12px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    background: var(--accent);
-    color: white;
-    border-radius: 8px;
-    transition: background 0.3s;
-    margin-left: 10px;
-    white-space: nowrap;
-}
-
-#themeToggle:hover {
-    background: var(--accent-light);
-}
-
-
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
 /*SECTIONS*/
 section {
     padding: 120px 20px 60px;
@@ -206,6 +202,10 @@ h2 {
 }
 
 
+
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
 /*GALLERY GRID*/
 .gallery-grid {
     display: grid;
@@ -226,6 +226,9 @@ h2 {
 
 
 
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
 /*FEEDBACK FORM*/
 .feedback-form {
     max-width: 600px;
@@ -268,7 +271,9 @@ h2 {
 }
 
 
-
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
 /*BACK TO TOP BUTTON*/
 #backTop {
     position: fixed;
@@ -290,7 +295,9 @@ h2 {
 }
 
 
-
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
 /*ANIMATIONS*/
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -298,6 +305,12 @@ h2 {
 }
 
 
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
 /* Tablet fix */
 @media (max-width: 1024px) {
     .site-title {
