@@ -70,6 +70,8 @@ nav a:hover {
     color: white;
     border-radius: 8px;
     transition: background 0.3s;
+    margin-left: 10px;
+    white-space: nowrap;
 }
 
 #themeToggle:hover {
