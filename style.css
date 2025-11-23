@@ -32,13 +32,12 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 65px;
-    padding: 10px 20px;
+    height: 70px;
+    padding: 5px 20px;
 
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    grid-template-columns: auto 1fr auto;
 
     background: var(--nav);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -50,7 +49,7 @@ header {
     display: flex;
     align-items: center;
     gap: 12px;
-    flex-shrink: 0;
+    min-width: 0;
 }
 
 header .logo {
@@ -65,7 +64,7 @@ nav {
     gap: 20px;
     flex-wrap: nowrap;     /* PREVENTS 2nd line */
     white-space: nowrap;   /* PREVENTS LINE BREAKS */
-    flex-shrink: 1;
+    justify-content: center;
 }
 
 /* Theme Button */
@@ -79,34 +78,6 @@ nav {
     cursor: pointer;
     white-space: nowrap;
     flex-shrink: 0;        /* PREVENTS SHRINKING OFFSCREEN */
-}
-
-
-
-
-
-
-
-header {
-    position: fixed;
-    top: 0;
-    height: 65px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background: var(--nav);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 1000;
-    transition: top 0.3s;
-}
-
-header .logo {
-    height: 45px;
-    width: 45px;
-    object-fit: contain;
-    flex-shrink: 0;
 }
 
 nav a {
