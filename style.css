@@ -61,6 +61,41 @@ nav a:hover {
     color: var(--accent);
 }
 
+/* Layout control */
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
+/* Prevent right side from breaking */
+.nav-right {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Resize the title on tablet */
+.site-title {
+    font-size: 1.4rem;   /* smaller font */
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Fix nav layout on tablet */
+nav {
+    display: flex;
+    gap: 14px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+/* Ensure icons/buttons don’t push layout */
+#themeToggle {
+    flex-shrink: 0;
+}
+
+
 #themeToggle {
     padding: 8px 12px;
     font-size: 18px;
