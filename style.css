@@ -76,7 +76,6 @@ nav {
     background: var(--accent);
     color: white;
     cursor: pointer;
-    white-space: nowrap;
     flex-shrink: 0;        /* PREVENTS SHRINKING OFFSCREEN */
 }
 
