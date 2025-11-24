@@ -294,6 +294,73 @@ h2 {
     background: var(--accent-light);
 }
 
+/* ===================== */
+/* FOOTER DESIGN          */
+/* ===================== */
+
+.site-footer {
+    background: var(--nav);
+    color: var(--text);
+    padding: 40px 20px 25px;
+    margin-top: 60px;
+    border-top: 2px solid rgba(255,255,255,0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left {
+    max-width: 300px;
+}
+
+.footer-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 150px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    color: var(--accent);
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: var(--accent-light);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
 
 /*-----------------*/
 /*-----------------*/
@@ -362,4 +429,20 @@ h2 {
         margin-right: auto;
     }
 }
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+}
+
 /*---------------------------------*/
+
+
