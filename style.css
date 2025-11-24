@@ -426,20 +426,23 @@ h2 {
 /* Mobile/tablet compact nav */
 @media (max-width: 720px) {
     header {
+        display: flex;
         flex-wrap: wrap;
         height: auto;
         padding: 10px;
-        text-align: center;
-        display: flex;
         justify-content: center;
         gap: 10px;
+    }
+
+    .header-left {
+        width: 100%;
+        justify-content: center;
     }
 
     nav {
         order: 3;
         width: 100%;
         justify-content: center;
-        margin-top: 5px;
         flex-wrap: wrap;
         gap: 12px;
     }
