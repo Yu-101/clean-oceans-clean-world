@@ -156,7 +156,7 @@ h2 {
     max-width: 900px;
     margin: 40px auto;
     text-align: center;
-    animation: fadeIn 1s ease;
+    animation: fadeIn 1.5s ease;
 }
 
 .image-block img {
@@ -199,10 +199,15 @@ h2 {
 .hero-btn-container {
     text-align: center;
     margin-top: 20px;
+    max-width: 1400px;
 }
 
-
-
+.hero {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 1400px;
+}
+    
 /*-----------------*/
 /*-----------------*/
 /*-----------------*/
