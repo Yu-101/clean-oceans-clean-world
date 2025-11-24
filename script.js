@@ -13,16 +13,13 @@ if (themeToggle) {
 // LEARN MORE BUTTONS
 
 
-document.getElementById("learnMoreBtn").addEventListener("click", function() {
-    const extraText = document.getElementById("extraText");
-    if (extraText.classList.contains("hidden")) {
-        extraText.classList.remove("hidden");
-        this.textContent = "Show Less"; // optional toggle
-    } else {
-        extraText.classList.add("hidden");
-        this.textContent = "Learn More";
+function toggleMore(id) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.classList.toggle("hidden");
     }
-});
+}
+
 
 // BACK TO TOP BUTTON
 
