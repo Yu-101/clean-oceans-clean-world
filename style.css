@@ -468,4 +468,25 @@ h2 {
 
 /*---------------------------------*/
 
+header {
+    grid-template-columns: auto 1fr auto;
+    min-height: 70px;
+    overflow: visible;
+}
+
+/* Keep the theme button from being compressed */
+#themeToggle {
+    flex-shrink: 0;
+    min-width: 48px;
+}
+
+/* Prevent nav links from expanding too much */
+nav {
+    overflow-x: auto;   /* <— THIS fixes the clipping */
+    scrollbar-width: none; /* Firefox hide scrollbar */
+}
+
+nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari hide scrollbar */
+}
 
